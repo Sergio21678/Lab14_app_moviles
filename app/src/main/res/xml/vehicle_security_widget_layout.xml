@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Fondo del widget -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#ffffff">
+
+        <!-- Título del estado del vehículo -->
+        <TextView
+            android:id="@+id/widgetTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estado del Vehículo"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="8dp" />
+
+        <!-- Texto del nivel de combustible -->
+        <TextView
+            android:id="@+id/fuelStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Combustible: 75%"
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="4dp" />
+
+        <!-- Texto del estado de la batería -->
+        <TextView
+            android:id="@+id/batteryStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Batería: Buena"
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="8dp" />
+
+        <!-- Botón para acceder a la cámara -->
+        <Button
+            android:id="@+id/openCameraButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Acceder a la Cámara"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+
+</FrameLayout>
